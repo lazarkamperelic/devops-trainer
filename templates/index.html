@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Trainer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="app">
+        <section id="startScreen" class="hero">
+            <h1 class="logo">
+                <span>DevOps</span>
+                <span>Trainer</span>
+            </h1>
+
+            <p>Choose a DevOps category and match functions with their correct commands.</p>
+
+            <div class="category-box">
+                <label for="categorySelect">Category</label>
+                <select id="categorySelect"></select>
+            </div>
+
+            <div class="category-box">
+                <label for="subcategorySelect">Subcategory</label>
+                <select id="subcategorySelect"></select>
+            </div>
+
+            <button id="startBtn">Start Training</button>
+        </section>
+
+        <section id="gameScreen" class="game hidden">
+            <div class="game-header">
+                <div>
+                    <h2>Match the pairs</h2>
+                    <p class="subtitle">Click a function, then its correct command.</p>
+                </div>
+
+                <div class="stats">
+                    <span id="score">Score: 0</span>
+                    <span id="highScore">High Score: 0</span>
+                    <span id="accuracy">Accuracy: 100%</span>
+                    <span id="timer">01:30</span>
+                </div>
+
+                <div class="game-actions">
+                    <button id="restartBtn">Restart</button>
+                    <button id="menuBtn">Main Menu</button>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div id="commands" class="column"></div>
+                <div id="descriptions" class="column"></div>
+            </div>
+
+            <div id="endScreen" class="end-screen hidden">
+                <h2>Time's up!</h2>
+                <p id="finalScore">Final score: 0</p>
+                <button id="playAgainBtn">Play Again</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

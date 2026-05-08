@@ -1,0 +1,335 @@
+{
+  "linux": {
+    "name": "Linux",
+    "subcategories": {
+      "file-system": {
+        "name": "File System",
+        "questions": [
+          { "cmd": "ls", "desc": "List directory contents" },
+          { "cmd": "cd", "desc": "Change directory" },
+          { "cmd": "pwd", "desc": "Print working directory" },
+          { "cmd": "mkdir", "desc": "Create directory" },
+          { "cmd": "rm", "desc": "Remove files" },
+          { "cmd": "cp", "desc": "Copy files" },
+          { "cmd": "mv", "desc": "Move or rename files" },
+          { "cmd": "touch", "desc": "Create empty file" },
+          { "cmd": "cat", "desc": "Show file contents" },
+          { "cmd": "find", "desc": "Search for files" }
+        ]
+      },
+
+      "permissions": {
+        "name": "Permissions",
+        "questions": [
+          { "cmd": "chmod", "desc": "Change file permissions" },
+          { "cmd": "chown", "desc": "Change file owner" },
+          { "cmd": "sudo", "desc": "Run command as another user" },
+          { "cmd": "passwd", "desc": "Change password" },
+          { "cmd": "whoami", "desc": "Show current username" },
+          { "cmd": "groups", "desc": "Show user groups" },
+          { "cmd": "id", "desc": "Show user and group IDs" },
+          { "cmd": "su", "desc": "Switch user" },
+          { "cmd": "umask", "desc": "Set default permissions" },
+          { "cmd": "stat", "desc": "Show file metadata" }
+        ]
+      },
+
+      "networking": {
+        "name": "Networking",
+        "questions": [
+          { "cmd": "ping", "desc": "Test network connectivity" },
+          { "cmd": "curl", "desc": "Send HTTP request" },
+          { "cmd": "wget", "desc": "Download files from web" },
+          { "cmd": "ssh", "desc": "Connect to remote server" },
+          { "cmd": "scp", "desc": "Copy files over SSH" },
+          { "cmd": "ip a", "desc": "Show IP addresses" },
+          { "cmd": "ss -tuln", "desc": "Show listening ports" },
+          { "cmd": "netstat", "desc": "Show network connections" },
+          { "cmd": "dig", "desc": "Query DNS records" },
+          { "cmd": "nslookup", "desc": "Perform DNS lookup" }
+        ]
+      },
+
+      "processes-services": {
+        "name": "Processes & Services",
+        "questions": [
+          { "cmd": "ps", "desc": "List running processes" },
+          { "cmd": "top", "desc": "Monitor system processes" },
+          { "cmd": "kill", "desc": "Terminate process by PID" },
+          { "cmd": "pkill", "desc": "Terminate process by name" },
+          { "cmd": "systemctl", "desc": "Manage system services" },
+          { "cmd": "journalctl", "desc": "View system logs" },
+          { "cmd": "free", "desc": "Show memory usage" },
+          { "cmd": "uptime", "desc": "Show system uptime" },
+          { "cmd": "jobs", "desc": "Show background jobs" },
+          { "cmd": "nohup", "desc": "Run process after logout" }
+        ]
+      }
+    }
+  },
+
+  "git": {
+    "name": "Git",
+    "subcategories": {
+      "basics": {
+        "name": "Basics",
+        "questions": [
+          { "cmd": "git init", "desc": "Initialize repository" },
+          { "cmd": "git status", "desc": "Show repository status" },
+          { "cmd": "git add .", "desc": "Stage all changes" },
+          { "cmd": "git commit -m", "desc": "Create commit with message" },
+          { "cmd": "git log", "desc": "Show commit history" },
+          { "cmd": "git diff", "desc": "Show file differences" },
+          { "cmd": "git restore", "desc": "Restore file changes" },
+          { "cmd": "git rm", "desc": "Remove tracked file" },
+          { "cmd": "git mv", "desc": "Move tracked file" },
+          { "cmd": "git show", "desc": "Show commit details" }
+        ]
+      },
+
+      "branching-merging": {
+        "name": "Branching & Merging",
+        "questions": [
+          { "cmd": "git branch", "desc": "List branches" },
+          { "cmd": "git checkout", "desc": "Switch branch" },
+          { "cmd": "git checkout -b", "desc": "Create and switch branch" },
+          { "cmd": "git merge", "desc": "Merge branches" },
+          { "cmd": "git rebase", "desc": "Reapply commits on top of another base" },
+          { "cmd": "git cherry-pick", "desc": "Apply specific commit" },
+          { "cmd": "git stash", "desc": "Temporarily save changes" },
+          { "cmd": "git stash pop", "desc": "Restore stashed changes" },
+          { "cmd": "git branch -d", "desc": "Delete branch" },
+          { "cmd": "git switch", "desc": "Switch branches" }
+        ]
+      },
+
+      "remote-repositories": {
+        "name": "Remote Repositories",
+        "questions": [
+          { "cmd": "git clone", "desc": "Clone remote repository" },
+          { "cmd": "git pull", "desc": "Fetch and merge changes" },
+          { "cmd": "git push", "desc": "Push changes to remote" },
+          { "cmd": "git remote -v", "desc": "Show remote repositories" },
+          { "cmd": "git fetch", "desc": "Download remote changes" },
+          { "cmd": "git remote add", "desc": "Add remote repository" },
+          { "cmd": "git push -u origin", "desc": "Push and track branch" },
+          { "cmd": "git pull origin", "desc": "Pull from specific remote" },
+          { "cmd": "git remote remove", "desc": "Remove remote repository" },
+          { "cmd": "git ls-remote", "desc": "List remote references" }
+        ]
+      }
+    }
+  },
+
+  "docker": {
+    "name": "Docker",
+    "subcategories": {
+      "containers": {
+        "name": "Containers",
+        "questions": [
+          { "cmd": "docker ps", "desc": "List running containers" },
+          { "cmd": "docker ps -a", "desc": "List all containers" },
+          { "cmd": "docker run", "desc": "Run a new container" },
+          { "cmd": "docker start", "desc": "Start stopped container" },
+          { "cmd": "docker stop", "desc": "Stop running container" },
+          { "cmd": "docker restart", "desc": "Restart container" },
+          { "cmd": "docker rm", "desc": "Remove container" },
+          { "cmd": "docker exec", "desc": "Run command inside container" },
+          { "cmd": "docker logs", "desc": "View container logs" },
+          { "cmd": "docker inspect", "desc": "Show detailed container info" }
+        ]
+      },
+
+      "images": {
+        "name": "Images",
+        "questions": [
+          { "cmd": "docker images", "desc": "List Docker images" },
+          { "cmd": "docker build", "desc": "Build image from Dockerfile" },
+          { "cmd": "docker pull", "desc": "Download image from registry" },
+          { "cmd": "docker push", "desc": "Push image to registry" },
+          { "cmd": "docker rmi", "desc": "Remove Docker image" },
+          { "cmd": "docker tag", "desc": "Tag Docker image" },
+          { "cmd": "docker history", "desc": "Show image layer history" },
+          { "cmd": "docker save", "desc": "Save image to archive" },
+          { "cmd": "docker load", "desc": "Load image from archive" },
+          { "cmd": "docker search", "desc": "Search Docker Hub" }
+        ]
+      },
+
+      "compose": {
+        "name": "Docker Compose",
+        "questions": [
+          { "cmd": "docker-compose up", "desc": "Start compose services" },
+          { "cmd": "docker-compose up -d", "desc": "Start services in background" },
+          { "cmd": "docker-compose down", "desc": "Stop and remove services" },
+          { "cmd": "docker-compose ps", "desc": "List compose containers" },
+          { "cmd": "docker-compose logs", "desc": "View compose logs" },
+          { "cmd": "docker-compose restart", "desc": "Restart compose services" },
+          { "cmd": "docker-compose build", "desc": "Build compose images" },
+          { "cmd": "docker-compose pull", "desc": "Pull compose images" },
+          { "cmd": "docker-compose exec", "desc": "Run command in service" },
+          { "cmd": "docker-compose config", "desc": "Validate compose file" }
+        ]
+      }
+    }
+  },
+
+"kubernetes": {
+  "name": "Kubernetes",
+  "subcategories": {
+    "pods": {
+      "name": "Pods",
+      "questions": [
+        { "cmd": "kubectl get pods", "desc": "List pods" },
+        { "cmd": "kubectl describe pod", "desc": "Show pod details" },
+        { "cmd": "kubectl delete pod", "desc": "Delete pod" },
+        { "cmd": "kubectl logs", "desc": "Show pod logs" },
+        { "cmd": "kubectl exec", "desc": "Execute command in pod" },
+        { "cmd": "kubectl top pod", "desc": "Show pod resource usage" },
+        { "cmd": "kubectl get pod -o wide", "desc": "Show extended pod info" },
+        { "cmd": "kubectl port-forward", "desc": "Forward local port to pod" },
+        { "cmd": "kubectl cp", "desc": "Copy files to or from pod" },
+        { "cmd": "kubectl attach", "desc": "Attach to running container" }
+      ]
+    },
+
+    "deployments": {
+      "name": "Deployments",
+      "questions": [
+        { "cmd": "kubectl get deployments", "desc": "List deployments" },
+        { "cmd": "kubectl apply -f", "desc": "Apply configuration file" },
+        { "cmd": "kubectl rollout restart", "desc": "Restart deployment" },
+        { "cmd": "kubectl scale deployment", "desc": "Scale deployment" },
+        { "cmd": "kubectl edit deployment", "desc": "Edit deployment" },
+        { "cmd": "kubectl rollout status", "desc": "Show rollout status" },
+        { "cmd": "kubectl rollout undo", "desc": "Rollback deployment" },
+        { "cmd": "kubectl set image", "desc": "Update container image" },
+        { "cmd": "kubectl autoscale", "desc": "Create autoscaler" },
+        { "cmd": "kubectl create deployment", "desc": "Create deployment" }
+      ]
+    },
+
+    "services": {
+      "name": "Services",
+      "questions": [
+        { "cmd": "kubectl get svc", "desc": "List services" },
+        { "cmd": "kubectl expose", "desc": "Expose deployment as service" },
+        { "cmd": "kubectl get endpoints", "desc": "List service endpoints" },
+        { "cmd": "kubectl describe svc", "desc": "Show service details" },
+        { "cmd": "kubectl get ingress", "desc": "List ingress resources" },
+        { "cmd": "kubectl edit svc", "desc": "Edit service" },
+        { "cmd": "kubectl create service", "desc": "Create service" },
+        { "cmd": "kubectl get namespaces", "desc": "List namespaces" },
+        { "cmd": "kubectl config view", "desc": "Show kubeconfig" },
+        { "cmd": "kubectl cluster-info", "desc": "Show cluster info" }
+      ]
+    }
+  }
+},
+
+"terraform": {
+  "name": "Terraform",
+  "subcategories": {
+    "basics": {
+      "name": "Basics",
+      "questions": [
+        { "cmd": "terraform init", "desc": "Initialize Terraform project" },
+        { "cmd": "terraform plan", "desc": "Preview infrastructure changes" },
+        { "cmd": "terraform apply", "desc": "Apply infrastructure changes" },
+        { "cmd": "terraform destroy", "desc": "Destroy infrastructure" },
+        { "cmd": "terraform validate", "desc": "Validate Terraform configuration" },
+        { "cmd": "terraform fmt", "desc": "Format Terraform files" },
+        { "cmd": "terraform show", "desc": "Show Terraform state details" },
+        { "cmd": "terraform output", "desc": "Show Terraform outputs" },
+        { "cmd": "terraform graph", "desc": "Generate dependency graph" },
+        { "cmd": "terraform taint", "desc": "Mark resource for recreation" }
+      ]
+    },
+
+    "state": {
+      "name": "State",
+      "questions": [
+        { "cmd": "terraform state list", "desc": "List resources in state" },
+        { "cmd": "terraform state show", "desc": "Show resource in state" },
+        { "cmd": "terraform refresh", "desc": "Refresh Terraform state" },
+        { "cmd": "terraform state rm", "desc": "Remove resource from state" },
+        { "cmd": "terraform state mv", "desc": "Move resource in state" },
+        { "cmd": "terraform workspace list", "desc": "List Terraform workspaces" },
+        { "cmd": "terraform workspace select", "desc": "Select Terraform workspace" },
+        { "cmd": "terraform workspace new", "desc": "Create Terraform workspace" },
+        { "cmd": "terraform force-unlock", "desc": "Release Terraform state lock" },
+        { "cmd": "terraform providers", "desc": "Show Terraform providers" }
+      ]
+    },
+
+    "providers-variables": {
+      "name": "Providers & Variables",
+      "questions": [
+        { "cmd": "terraform import", "desc": "Import existing infrastructure" },
+        { "cmd": "terraform console", "desc": "Open Terraform console" },
+        { "cmd": "terraform version", "desc": "Show Terraform version" },
+        { "cmd": "terraform login", "desc": "Authenticate to Terraform Cloud" },
+        { "cmd": "terraform providers mirror", "desc": "Mirror Terraform providers" },
+        { "cmd": "terraform validate -json", "desc": "Validate config in JSON format" },
+        { "cmd": "terraform apply -auto-approve", "desc": "Apply without confirmation" },
+        { "cmd": "terraform destroy -auto-approve", "desc": "Destroy without confirmation" },
+        { "cmd": "terraform get", "desc": "Download module dependencies" },
+        { "cmd": "terraform plan -out", "desc": "Save execution plan to file" }
+      ]
+    }
+  }
+},
+
+"aws-cli": {
+  "name": "AWS CLI",
+  "subcategories": {
+    "s3": {
+      "name": "S3",
+      "questions": [
+        { "cmd": "aws s3 ls", "desc": "List S3 buckets" },
+        { "cmd": "aws s3 cp", "desc": "Copy file to or from S3" },
+        { "cmd": "aws s3 sync", "desc": "Sync local directory with S3" },
+        { "cmd": "aws s3 mb", "desc": "Create S3 bucket" },
+        { "cmd": "aws s3 rb", "desc": "Remove S3 bucket" },
+        { "cmd": "aws s3 presign", "desc": "Generate temporary S3 URL" },
+        { "cmd": "aws s3 mv", "desc": "Move object in S3" },
+        { "cmd": "aws s3 rm", "desc": "Remove object from S3" },
+        { "cmd": "aws s3api list-buckets", "desc": "List buckets using S3 API" },
+        { "cmd": "aws s3 website", "desc": "Configure static website hosting" }
+      ]
+    },
+
+    "ec2": {
+      "name": "EC2",
+      "questions": [
+        { "cmd": "aws ec2 describe-instances", "desc": "List EC2 instances" },
+        { "cmd": "aws ec2 start-instances", "desc": "Start EC2 instance" },
+        { "cmd": "aws ec2 stop-instances", "desc": "Stop EC2 instance" },
+        { "cmd": "aws ec2 reboot-instances", "desc": "Reboot EC2 instance" },
+        { "cmd": "aws ec2 terminate-instances", "desc": "Terminate EC2 instance" },
+        { "cmd": "aws ec2 describe-security-groups", "desc": "List security groups" },
+        { "cmd": "aws ec2 describe-volumes", "desc": "List EBS volumes" },
+        { "cmd": "aws ec2 create-key-pair", "desc": "Create EC2 key pair" },
+        { "cmd": "aws ec2 create-tags", "desc": "Add tags to resources" },
+        { "cmd": "aws ec2 describe-images", "desc": "List AMIs" }
+      ]
+    },
+
+    "iam": {
+      "name": "IAM",
+      "questions": [
+        { "cmd": "aws iam list-users", "desc": "List IAM users" },
+        { "cmd": "aws iam create-user", "desc": "Create IAM user" },
+        { "cmd": "aws iam delete-user", "desc": "Delete IAM user" },
+        { "cmd": "aws iam list-groups", "desc": "List IAM groups" },
+        { "cmd": "aws iam list-roles", "desc": "List IAM roles" },
+        { "cmd": "aws iam attach-user-policy", "desc": "Attach policy to IAM user" },
+        { "cmd": "aws iam create-role", "desc": "Create IAM role" },
+        { "cmd": "aws iam create-policy", "desc": "Create IAM policy" },
+        { "cmd": "aws iam get-user", "desc": "Show IAM user details" },
+        { "cmd": "aws iam list-policies", "desc": "List IAM policies" }
+      ]
+    }
+  }
+}
+}

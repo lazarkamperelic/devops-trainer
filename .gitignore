@@ -1,5 +1,14 @@
-venv/
-__pycache__/
-*.pyc
+# Python
+venv/ __pycache__/ *.pyc
+# Environment variables
 .env
+# macOS
 .DS_Store
+# VS Code
+.vscode/
+# Logs
+*.log
+# Docker
+docker-data/
+# Python cache
+.pytest_cache/

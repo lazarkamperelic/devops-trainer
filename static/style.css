@@ -109,6 +109,7 @@ button:hover {
     column-gap: 16px;
     row-gap: 12px;
     margin-top: 24px;
+    grid-auto-flow: dense;
 }
 
 .column {

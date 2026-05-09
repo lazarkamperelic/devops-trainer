@@ -191,19 +191,20 @@ function loadGame() {
     const shuffled = [...firstFive].sort(() => Math.random() - 0.5);
 
     firstFive.forEach(item => {
-        commandsDiv.appendChild(createCommandCard(item));
+        commandsDiv.appendChild(createDescriptionCard(item));
     });
 
     shuffled.forEach(item => {
-        descriptionsDiv.appendChild(createDescriptionCard(item));
+        descriptionsDiv.appendChild(createCommandCard(item));
     });
 }
 
 function createCommandCard(item) {
     const card = document.createElement("div");
     card.className = "card command-card";
-    card.textContent = item.desc;
+    card.textContent = item.cmd;
     card.dataset.cmd = item.cmd;
+    card.style.gridColumn = "2";
 
     card.addEventListener("click", () => {
         if (selectedDescription) {
@@ -229,8 +230,9 @@ function createCommandCard(item) {
 function createDescriptionCard(item) {
     const card = document.createElement("div");
     card.className = "card description-card";
-    card.textContent = item.cmd;
+    card.textContent = item.desc;
     card.dataset.cmd = item.cmd;
+    card.style.gridColumn = "1";
 
     card.addEventListener("click", () => {
         if (selectedCommand) {
